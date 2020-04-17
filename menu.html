@@ -1,0 +1,227 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            text-shadow: 2px 2px black;
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        
+        h2 {
+            margin: 0;
+            padding: 10px 20px;
+            background: #000;
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 10px 20px;
+        }
+        
+        ul li {
+            list-style: none;
+            padding: 5px 0;
+            font-size: 16px;
+        }
+        
+        li {
+            text-transform: capitalize;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body id="body-main">
+    <div class="main">
+
+        <header>
+            <div id="box" onclick="openFunction()">&#9776;</div>
+            <div id="nav" class="sidenav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+                </nav>
+            </div>
+        </header>
+        <script type="text/javascript">
+            function openFunction() {
+                document.getElementById("nav").style.width = "300px";
+                document.getElementById("box").style.marginleft = "300px";
+            }
+
+            function closeFunction() {
+                document.getElementById("nav").style.width = "0px";
+                document.getElementById("box").style.marginleft = "0px";
+            }
+        </script>
+    </div>
+    <div id="body">
+        <header>
+            <h1 align="center">Menu</h1>
+        </header>
+        <table style="margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>Starters</h2>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Scallop and sweetcorn dumplings</span>
+                            </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Stilton and nectarine wontons</span>
+                            </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                        <span>Trout and pigeon gyoza</span>
+                         </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                    <span>Ricotta and sweetcorn parcels</span>
+                     </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                <span>Sole and apple wontons</span>
+                </label>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>Main Course</h2>
+                        <ul>
+                            <li>
+                                <label>
+                            <span> Pepper and spinach curry</span>
+                        </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Costmary and manchego salad</span>
+                        </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Tomato and pepper pasta</span>
+                        </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span> Bean and salmon lasagne</span>
+                        </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Pigeon and sausage casserole</span>
+                        </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Feta and pesto spaghetti</span>
+                        </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Egg and salmon sushi</span>
+                        </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span> Cranberry and gochul jang salad</span>
+                        </label>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>Desserts</h2>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Coriander and prune buns</span>
+                            </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                            <span>Phyllo and sweet mincemeat pie</span>
+                            </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                        <span>Cocoa and almond pudding</span>
+                         </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                    <span>Plantain and duck crepes</span>
+                     </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                <span>Raisin and prune pudding</span>
+                </label>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="foot">
+        <a name="contact"></a>
+        <h2>Contact Us:</h2>
+        <p>Email: <a href="mailto:someone@example.com?">someone@example.com</a> </p>
+        <p>Mobile: <a href="tel:+1 206 555 0100">+1-206-555-0100</a> </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 1.5em;
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+        
+        fieldset {
+            width: 40%;
+            height: 690px;
+            border-radius: 5px;
+            outline: none;
+            background-color: rgb(87, 84, 84);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body id="body-main">
+
+    <div class="main">
+
+        <header>
+            <div id="box" onclick="openFunction()">&#9776;</div>
+            <div id="nav" class="sidenav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+                </nav>
+            </div>
+        </header>
+        <script type="text/javascript">
+            function openFunction() {
+                document.getElementById("nav").style.width = "300px";
+                document.getElementById("box").style.marginleft = "300px";
+            }
+
+            function closeFunction() {
+                document.getElementById("nav").style.width = "0px";
+                document.getElementById("box").style.marginleft = "0px";
+            }
+        </script>
+    </div>
+    <div>
+        <center>
+            <fieldset>
+                <h2>Our Story</h2>
+                <p>Welcome to The Grove, your number one source for a great dining experience. We're dedicated to providing you the very best service, with an emphasis on our food, customer service, and the overall ambiance of our restaurant.</p> <br>
+                <p>Founded in 2020 by Hamzat Olowu, The Grove has come a long way from its beginnings in New York. When Hamzat first started out, his passion for food drove him to start his own business.</p> <br>
+                <p>We hope you enjoy our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p> <br>
+                <p> Sincerely,</p>
+                <p> The Grove</p>
+            </fieldset>
+        </center>
+    </div>
+    <div class="foot">
+        <a name="contact"></a>
+        <h2>Contact Us:</h2>
+        <p>Email: <a href="mailto:someone@example.com?">someone@example.com</a> </p>
+        <p>Mobile: <a href="tel:+1 206 555 0100">+1-206-555-0100</a> </p>
+    </div>
+</body>
+
+</html>

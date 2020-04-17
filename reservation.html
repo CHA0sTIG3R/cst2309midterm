@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            text-shadow: 2px 2px black;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            font-size: 44px;
+            position: relative;
+            top: 50px;
+        }
+        
+        input {
+            border-radius: 4px;
+            width: 250px;
+            height: 35px;
+            text-indent: 5px;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        fieldset {
+            width: 50%;
+            height: 690px;
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        table {
+            font-size: 22px;
+            position: relative;
+            top: 50px;
+        }
+        
+        td {
+            line-height: 50px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            position: relative;
+            top: 50px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+        
+        input[type="reset"] {
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            position: relative;
+            top: 50px;
+        }
+        
+        input[type="reset"]:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body id="body-main">
+
+    <body id="body-main">
+        <div class="main">
+
+            <header>
+                <div id="box" onclick="openFunction()">&#9776;</div>
+                <div id="nav" class="sidenav">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="about.html">About</a>
+                        <a href="reservation.html">Reservation</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+                    </nav>
+                </div>
+            </header>
+            <script type="text/javascript">
+                function openFunction() {
+                    document.getElementById("nav").style.width = "300px";
+                    document.getElementById("box").style.marginleft = "300px";
+                }
+
+                function closeFunction() {
+                    document.getElementById("nav").style.width = "0px";
+                    document.getElementById("box").style.marginleft = "0px";
+                }
+            </script>
+        </div>
+        <center>
+            <form>
+                <fieldset>
+                    <table>
+                        <h1>Reservation</h1>
+                        <tr>
+                            <th>Name</th>
+                            <td>:</td>
+                            <td><input type="text" name="name" id="name" placeholder="Enter Your Name"></td>
+                        </tr>
+                        <tr>
+                            <th>Party Of</th>
+                            <td>:</td>
+                            <td><input type="number" name="Number" id="number1" placeholder="Number of People"></td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>:</td>
+                            <td><input type="date" name="todate" id="todate1"></td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>:</td>
+                            <td><input type="tel" name="phone" id="phone1" placeholder="Phone Number"></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>:</td>
+                            <td><input type="email" name="email" id="email1" placeholder="Enter Your Email"></td>
+                        </tr>
+                    </table>
+                    <div>
+                        <tr>
+                            <td>
+                                <input type="submit" Values="submit" name="Submit" id="submit1">
+                            </td>
+                            <td>
+                                <input type="reset" Values="Reset" name="Reset" id="reset1">
+                            </td>
+                        </tr>
+                    </div>
+                </fieldset>
+            </form>
+        </center>
+        <div class="foot">
+            <a name="contact"></a>
+            <h2>Contact Us:</h2>
+            <p>Email: <a href="mailto:someone@example.com?">someone@example.com</a> </p>
+            <p>Mobile: <a href="tel:+1 206 555 0100">+1-206-555-0100</a> </p>
+        </div>
+    </body>
+
+</html>

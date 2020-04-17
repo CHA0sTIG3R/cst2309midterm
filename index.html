@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>The Grove</title>
+</head>
+
+<body id="body-main">
+
+    <div class="main">
+
+        <header>
+            <div id="box" onclick="openFunction()">&#9776;</div>
+            <div id="nav" class="sidenav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+                </nav>
+            </div>
+        </header>
+        <script type="text/javascript">
+            function openFunction() {
+                document.getElementById("nav").style.width = "300px";
+                document.getElementById("box").style.marginleft = "300px";
+            }
+
+            function closeFunction() {
+                document.getElementById("nav").style.width = "0px";
+                document.getElementById("box").style.marginleft = "0px";
+            }
+        </script>
+        <div class="text1">
+            <div class="text2">
+                <h1 align="center">WELCOME! To The Grove</h1>
+                <h2>Take Your Taste Buds On a Journey With Us.</h2>
+            </div>
+
+            <div class="pics">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="assets/images/gr1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="assets/images/gr2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="assets/images/gr3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="assets/images/gr4.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <a name="contact"></a>
+        <h2>Contact Us:</h2>
+        <p>Email: <a href="mailto:someone@example.com?">someone@example.com</a> </p>
+        <p>Mobile: <a href="tel:+1 206 555 0100">+1-206-555-0100</a> </p>
+    </div>
+
+</body>
+
+</html>
